@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const key = event.key;
         const digitButton = document.querySelector(`button.digits[data-key="${key}"]`);
         const operatorButton = document.querySelector(`button.operators[data-key="${key}"]`);
-        const equalsButton = document.querySelector(`button.equals[data-key="${key}"]`);
+        const equalsButton = document.querySelector(`button.operators[data-key="Enter"], button.operators[data-key="="]`);
         const clearButton = document.querySelector(`button.clear[data-key="${key}"]`);
         const backspaceButton = document.querySelector(`button.backspace[data-key="${key}"]`);
 
